@@ -1,0 +1,115 @@
+/* Photo Gallery Styling */
+.photo-gallery {
+    max-width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.photo-gallery h1 {
+    font-size: 2rem;
+    color: #04AA6D;
+    margin-bottom: 10px;
+}
+
+.photo-gallery p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #04AA6D;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.navigation-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigation-menu li {
+    margin: 0 20px;
+}
+
+.navigation-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+}
+
+.navigation-menu a:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.navigation-menu a.active {
+    background-color: #028a55; /* Active link color */
+    color: white;
+    font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navigation-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation-menu li {
+        margin: 10px 0;
+    }
+
+    .navigation-menu a {
+        padding: 10px 20px;
+    }
+}
