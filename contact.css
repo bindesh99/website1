@@ -1,0 +1,156 @@
+/* Contact Form Section */
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form h1 {
+    color: #04AA6D;
+    margin-bottom: 20px;
+}
+
+.contact-form p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #04AA6D;
+    outline: none;
+}
+
+.submit-button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #036d47;
+}
+
+/* Navigation Bar Styling */
+.navigation-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    border-bottom: 2px solid #04AA6D;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigation-menu li {
+    margin: 0;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 15px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation-menu a:hover {
+    background-color: #575757;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.navigation-menu a.active {
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .navigation-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-menu li {
+        margin-bottom: 5px;
+    }
+}
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 14px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #04AA6D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Links (Optional) */
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #04AA6D;
+}
+
